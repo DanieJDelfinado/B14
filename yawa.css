@@ -1,0 +1,60 @@
+* {
+    position: relative;
+  }
+  html,
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fbdf13;
+    display: flex;
+    justify-content: center;
+  }
+  .fcc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .fbc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .container {
+    width: 1140px;
+  }
+  .card {
+    width: calc((100% / 3) - 60px);
+    padding: 15px;
+  }
+  .outline-style {
+    outline: #333 3px solid;
+    background-color: rgba(0, 0, 0, 0);
+   z-index: 99;
+    margin: 30px 0;
+    border: unset; 
+  }
+  .outline-style::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: calc(100% + 3px);
+    height: calc(100% + 3px);
+    background: white;
+    z-index: -1;
+  }
+  button {
+    padding: 15px 30px;
+    font-size: 22px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+    color: #1e89ff;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
